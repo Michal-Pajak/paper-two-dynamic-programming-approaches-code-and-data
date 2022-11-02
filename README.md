@@ -2,6 +2,8 @@
  Code and data for the paper "Two dynamic programming approaches for finding optimal and Nash equilibrium harvesting strategies in predator-prey systems"
  
  Version: 02.11.2022
+ Authors: David Ramsey, Michał Pająk
+ Acknowledgements: This research is supported by the National Science Centre, Poland on the basis of Grant No. 2020/37/N/HS4/02187.
  
 For extensive search approach use "Extensive search analysis".
 - After loading script in R you can use the available functions to run the analysis in command line
