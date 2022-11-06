@@ -1,0 +1,8 @@
+Filename: oscillatory
+Created: 2022-11-06 07:55:53
+
+Datafiles:
+oscillatory_trajectories.csv - trajectory data (no harvest, social optimum maximum harvest, Nash equilibrium maximum harvest)
+oscillatory_isoclines.csv - zero-growth isoclines data (no harvest scenario)
+oscillatory_parameters.csv - description of the model parameters
+oscillatory_plots.png - group plots (no harvest, social optimum maximum harvest, Nash equilibrium maximum harvest) and phase diagrams for all scenarios)

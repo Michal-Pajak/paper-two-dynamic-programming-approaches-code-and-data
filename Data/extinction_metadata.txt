@@ -1,0 +1,8 @@
+Filename: extinction
+Created: 2022-11-06 01:28:00
+
+Datafiles:
+extinction_trajectories.csv - trajectory data (no harvest, social optimum maximum harvest, Nash equilibrium maximum harvest)
+extinction_isoclines.csv - zero-growth isoclines data (no harvest scenario)
+extinction_parameters.csv - description of the model parameters
+extinction_plots.png - group plots (no harvest, social optimum maximum harvest, Nash equilibrium maximum harvest) and phase diagrams for all scenarios)
