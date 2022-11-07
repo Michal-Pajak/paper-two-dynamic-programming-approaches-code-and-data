@@ -1,0 +1,10 @@
+Filename: stationary
+Created: 2022-11-06 09:52:15
+
+Datafiles:
+steady_state_trajectories.csv - trajectory data (no harvest, social optimum maximum harvest, Nash equilibrium maximum harvest)
+steady_state_isoclines.csv - zero-growth isoclines data (no harvest scenario)
+steady_state_parameters.csv - description of the model parameters
+steady_state_plots.png - group plots (no harvest, social optimum maximum harvest, Nash equilibrium maximum harvest) and phase diagrams for all scenarios)
+
+Note: Metadata updated on 2022-11-07 - filename changes.

@@ -169,7 +169,7 @@ model_comparison_baseline_3_cases <- function()
 	par(mar = c(3, 3, 1, 0.5))
     par(mgp=c(2,0.5,0))
 
-	plot(s_c_trajx_0,s_c_trajy_0,type="l", ,xlab="Prey",ylab="Predator",ylim=c(0,50), xlim=c(0,50),col="CornflowerBlue", main="Scenario 1: Stationary", cex.main=0.75)
+	plot(s_c_trajx_0,s_c_trajy_0,type="l", ,xlab="Prey",ylab="Predator",ylim=c(0,50), xlim=c(0,50),col="CornflowerBlue", main="Scenario 1: Steady state", cex.main=0.75)
 	points(s_c_trajx_0[1],s_c_trajy_0[1], pch=16, col="CornflowerBlue")
 	points(s_c_trajx_0[t0+1],s_c_trajy_0[t0+1], pch=4, col="CornflowerBlue")
 	lines(s_d_trajx_0,s_d_trajy_0,type="l", lty=1, col="black")
@@ -308,7 +308,7 @@ results_comparison_oscillation <- function()
 	write.csv(data_frame,"oscillation_comparison.csv")
 }
 
-results_comparison_stationary <- function()
+results_comparison_steady_state <- function()
 {
 	#Common and fixed parameters
 	t0 <- 100
@@ -318,11 +318,11 @@ results_comparison_stationary <- function()
 	time<-1:(t0+1)
 
 	#Data
-	ds_data <- read.csv("stationary_trajectories.csv")	#Discrete system (all data)
+	ds_data <- read.csv("steady_state_trajectories.csv")	#Discrete system (all data)
 	cs_so_data <- read.csv("scenario1_1_01.csv", sep=";", dec=",")	#Continuous system (social optimum)
 	cs_ne_data <- read.csv("game1_1_01.csv", sep=";", dec=",")	#Continuous system (Nash equilibirum)
 
-	png(filename="f_stationary_comparison.png",width = 15, height = 10, units="cm", res=300)
+	png(filename="f_steady_state_comparison.png",width = 15, height = 10, units="cm", res=300)
 	par(mfrow=c(2,3))
 	par(mar = c(3, 3, 1, 0.5))
     par(mgp=c(2,0.5,0))
@@ -413,7 +413,7 @@ results_comparison_stationary <- function()
 	data_export <- cbind(mean(ds_data$x_so),mean(ds_data$y_so),mean(ds_data$y_h_so),mean(discrete_h_so),mean(cs_so_data$xt),mean(cs_so_data$yt),mean(cs_so_data$at),mean(continuous_h_so),mean(ds_data$x_ne),mean(ds_data$y_ne),mean(ds_data$y_h_ne),mean(discrete_h_ne),mean(cs_ne_data$xt),mean(cs_ne_data$yt),mean(cs_ne_data$at),mean(continuous_h_ne))
 	colnames(data_export) <- c("d_mean_x_so","d_mean_y_so","d_mean_h_so","d_mean_h_so_mid","c_mean_x_so","c_mean_y_so","c_mean_h_so","c_mean_h_so_mid","d_mean_x_ne","d_mean_y_ne","d_mean_h_ne","d_mean_h_ne_mid","c_mean_x_ne","c_mean_y_ne","c_mean_h_ne","c_mean_h_ne_mid")
 	data_frame <- as.data.frame(data_export)
-	write.csv(data_frame,"stationary_comparison.csv")
+	write.csv(data_frame,"steady_state_comparison.csv")
 }
 
 
